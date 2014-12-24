@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bd88e951ece54c7dad650a3096a65822" Name="Diagram1">
+        <EntityTypeShape EntityType="Databases.categories" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Databases.status_list" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Databases.users" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Databases.files" Width="1.5" PointX="6.87585667654679" PointY="29.545462905217644" />
+        <EntityTypeShape EntityType="Databases.tasks" Width="1.5" PointX="11.892263095775741" PointY="31.109480142178704" />
+        <EntityTypeShape EntityType="Databases.checks" Width="1.5" PointX="0.89226622175996484" PointY="7.7373767084150469" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TaskManager.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="baza" Type="System.String" Scope="User">
+      <Value Profile="(Default)">zadania</Value>
+    </Setting>
+    <Setting Name="login" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sa</Value>
+    </Setting>
+    <Setting Name="haslo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">root</Value>
+    </Setting>
+    <Setting Name="adres" Type="System.String" Scope="User">
+      <Value Profile="(Default)">HACKER\lokalna_baza</Value>
+    </Setting>
+    <Setting Name="login_uzytkownika" Type="System.String" Scope="User">
+      <Value Profile="(Default)">marek</Value>
+    </Setting>
+    <Setting Name="imie_uzytkownika" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Marek</Value>
+    </Setting>
+    <Setting Name="nazwisko_uzytkownika" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Bar</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
