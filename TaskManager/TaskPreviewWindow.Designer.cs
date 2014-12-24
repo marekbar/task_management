@@ -89,7 +89,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(747, 470);
+            this.tabPage1.Size = new System.Drawing.Size(747, 448);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Dane podstawowe";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -119,7 +119,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(741, 464);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(741, 442);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -139,6 +139,7 @@
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(735, 23);
             this.tbName.TabIndex = 1;
+            this.tbName.TextChanged += new System.EventHandler(this.tbName_TextChanged);
             // 
             // label2
             // 
@@ -158,6 +159,7 @@
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(735, 25);
             this.cbCategory.TabIndex = 3;
+            this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -178,6 +180,7 @@
             this.cbStatus.Name = "cbStatus";
             this.cbStatus.Size = new System.Drawing.Size(735, 25);
             this.cbStatus.TabIndex = 5;
+            this.cbStatus.SelectedIndexChanged += new System.EventHandler(this.cbStatus_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -198,6 +201,7 @@
             this.cbPerson.Name = "cbPerson";
             this.cbPerson.Size = new System.Drawing.Size(735, 25);
             this.cbPerson.TabIndex = 7;
+            this.cbPerson.SelectedIndexChanged += new System.EventHandler(this.cbPerson_SelectedIndexChanged);
             // 
             // tabPage2
             // 
@@ -205,7 +209,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(747, 470);
+            this.tabPage2.Size = new System.Drawing.Size(747, 448);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Opis";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -215,7 +219,7 @@
             this.desc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.desc.Location = new System.Drawing.Point(3, 3);
             this.desc.Name = "desc";
-            this.desc.Size = new System.Drawing.Size(741, 464);
+            this.desc.Size = new System.Drawing.Size(741, 442);
             this.desc.TabIndex = 0;
             this.desc.Text = "";
             // 
@@ -224,7 +228,7 @@
             this.tabPage3.Controls.Add(this.attachments);
             this.tabPage3.Location = new System.Drawing.Point(4, 26);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(747, 470);
+            this.tabPage3.Size = new System.Drawing.Size(747, 448);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Załączniki";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -239,7 +243,7 @@
             this.attachments.Location = new System.Drawing.Point(0, 0);
             this.attachments.Name = "attachments";
             this.attachments.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.attachments.Size = new System.Drawing.Size(747, 470);
+            this.attachments.Size = new System.Drawing.Size(747, 448);
             this.attachments.TabIndex = 0;
             // 
             // taskMenu

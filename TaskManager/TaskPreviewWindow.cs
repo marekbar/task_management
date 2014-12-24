@@ -291,5 +291,47 @@ namespace TaskManager
             }
 
         }
+
+        private void tbName_TextChanged(object sender, EventArgs e)
+        {
+            db.tasks.Where(q => q.id == TaskId).First().task_name = tbName.Text;
+            db.SaveChanges();
+        }
+
+        private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string what = (string)cbCategory.SelectedItem;
+            var tmp = db.categories.Where(q => q.name == what);
+            if (tmp.Count() > 0)
+            {
+                var id = tmp.First().id;
+                db.tasks.Where(q => q.id == TaskId).First().category_id = id;
+                db.SaveChanges();
+            }
+        }
+
+        private void cbStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string what = (string)cbStatus.SelectedItem;
+            var tmp = db.status_list.Where(q => q.status == what);
+            if (tmp.Count() > 0)
+            {
+                var id = tmp.First().id;
+                db.tasks.Where(q => q.id == TaskId).First().status = id;
+                db.SaveChanges();
+            }
+        }
+
+        private void cbPerson_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string what = (string)cbPerson.SelectedItem;
+            var tmp = db.users.Where(q => q.login == what);
+            if (tmp.Count() > 0)
+            {
+                var id = tmp.First().id;
+                db.tasks.Where(q => q.id == TaskId).First().assigned_to_user_id = id;
+                db.SaveChanges();
+            }
+        }
     }
 }
